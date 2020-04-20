@@ -1,0 +1,112 @@
+body{
+  display:grid;
+  grid-template-columns: auto;
+  /* flex-direction: column; */
+}
+/* form {
+  /* display:inline; */
+  display: grid;
+
+} */
+
+input[type=checkbox], [type=radio]{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  transform: scale(2);
+  padding: 10px;
+  margin:30px;
+  font-size: 2em;
+}
+
+input{
+
+  padding:20px;
+  margin:20px;
+  font-size: 2em;
+  text-align: center;
+  align-content: center;
+  margin:auto;
+}
+
+
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+}
+p {
+  font-size: 2em;
+}
+span {
+  /* margin: 20px 20px; */
+  height:100%;
+  font-size: 2em;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  padding: 10px;
+  font-size: 2em;
+  list-style: none;
+}
+
+/* Might want to wrap a span around your checkbox text */
+.checkboxtext
+{
+  /* Checkbox text */
+  font-size: 110%;
+  display: inline;
+}
+
+
+
+.btn {
+  width: 200px;
+  align-self: center;
+  margin: 8px 0;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1.5em;
+  border-radius: 5px;
+  background-color: #5bcfc7;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #5dd9d1;
+}
+
+
+
+
+.container {
+  display: grid;
+  /* align-self: center; */
+ flex-direction: column;
+ align-items: center;
+  background-color: #009bba;
+  width:60%
+
+}
+
+.row {
+  display:grid;
+  grid-template-columns: auto auto auto auto;
+  align-items: center;
+  justify-content: center;
+  margin:20px;
+  text-align: center;
+vertical-align:middle;
+
+}
+
+.listItem {
+  display:grid;
+  grid-template-columns: auto auto auto;
+}
+
+.high {}

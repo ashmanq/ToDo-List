@@ -1,0 +1,122 @@
+body {
+  /* display:grid; */
+  display:flex;
+  justify-content: center;
+  font-family: 'Kaushan Script';
+  background-color: #c4f5ff;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  font-size: 5em;
+}
+
+input{
+  padding:20px;
+  margin:20px;
+  font-size: 2em;
+  text-align: center;
+  align-content: center;
+  margin:auto;
+  border-color:#b5b5b5;
+}
+
+input[type=checkbox], [type=radio]{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  transform: scale(2);
+  padding: 20px;
+  margin:40px;
+
+}
+
+ul {
+  padding:0px;
+  margin:0px;
+}
+
+li {
+  padding: 10px;
+  margin: 20px;
+  font-size: 2em;
+  list-style: none;
+  border-radius: 5px;
+  background-color: #f0fcff;
+}
+
+.container {
+  display:flex;
+  flex-direction: column;
+  align-self: center;
+   width:100%
+
+
+}
+
+form {
+  display:flex;
+  flex-direction: column;
+  align-self: center;
+
+  border: 2px;
+  border-color:#5bcfc7;
+  border-style: solid;
+  padding:50px;
+  background-color: #f0fcff;
+  border-radius: 8px;
+
+
+}
+
+.row {
+  display:flex;
+  justify-content: center;
+  align-self: center;
+  margin:20px;
+  width: 300px;
+}
+
+.checkboxItem {
+  flex-basis: 25%;
+  text-align: left;
+  font-size: 2em;
+}
+
+.btn {
+  width:300px;
+  align-self: center;
+  margin: 8px 20px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1.5em;
+  border-radius: 5px;
+  width: 80%;
+  background-color: #5bcfc7;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #4cb5ae;
+}
+
+.listItem {
+    background-color: #b0f5c1;
+}
+
+.item {
+  border-style: solid;
+  border-color:#5bcfc7;
+}
+
+.high {
+  border-color:#ff6e6e;
+  color: #ff6e6e;
+}
+
+.complete {
+  background-color: #52ff7c;
+}
