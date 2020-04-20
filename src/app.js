@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
         this.todos.push(itemToAdd);
         this.newTodo = "";
+        this.priority = "";
       },
       completeItem: function(index) {
         this.todos[index].isComplete = true;
@@ -30,8 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
         let classes = 'item';
         if (this.todos[index].isComplete == true) {
           classes += ' complete';
-        } else {
-          classes += ' incomplete';
         }
 
         if (this.todos[index].priority == "High") {
