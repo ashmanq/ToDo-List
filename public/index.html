@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ashman's ToDo List</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link rel="stylesheet" href="./css/styles.css">
+<script src="./js/bundle.js"></script>
+</head>
+<body>
+  <div id="app">
+    <h1>ToDo's</h1>
+
+    <form v-on:submit.prevent="addNewTodo">
+      <input id="todo" type="text" v-model="newTodo" required>
+      <input type="radio" name="priority" v-model="priority" value="High" required>High
+      <input type="radio" name="priority" v-model="priority" value="Low">Low
+      <input type="submit" value="Add Item">
+    </form>
+    <section>
+      <ul>
+        <li v-for="(item, index) in todos" v-bind:class="item.isComplete ?
+        'complete' : 'not-complete'">
+        <span>{{ item.name }}</span>
+        <span>Priority: {{ item.priority }}</span>
+        <span v-if="item.isComplete">Complete!</span>
+        <button v-if="!item.isComplete" v-on:click="completeItem(index)">Complete</button>
+
+        </li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
