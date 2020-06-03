@@ -47,6 +47,8 @@ ul {
 }
 
 li {
+  transition-property: all;
+  transition-duration: 3s;
   padding: 10px;
   margin: 20px;
   font-size: 2em;
@@ -101,24 +103,26 @@ form {
   background-color: #5bcfc7;
   color: white;
   font-family: 'Kaushan Script';
+  transition-property: all;
+  transition-duration: 2s;
 }
 
 .btn:hover {
   background-color: #4cb5ae;
 }
 
-.item {
+li.item {
   border-style: solid;
   color: #5bcfc7;
   border-color: #5bcfc7;
 }
 
-.high {
+li.high {
   border-color: #ff6e6e;
   color: #ff6e6e;
 }
 
-.complete {
+li.complete {
   text-align: center;
   color: #659969;
   border-color: #659969;

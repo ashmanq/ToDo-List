@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         this.todos = result;
       },
       checkClass: function(index) {
-        let classes = 'item';
+        let classes = '';
         if (this.todos[index].isComplete == true) {
           classes += ' complete';
         }

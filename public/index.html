@@ -20,8 +20,10 @@
           <form v-on:submit.prevent="addNewTodo">
             <input id="todo" type="text" v-model="newTodo" required>
             <div class="row">
-              <input class="checkboxItem" type="radio" name="priority" v-model="priority" value="High" required><p class="checkboxItem">High</p>
-              <input class="checkboxItem" type="radio" name="priority" v-model="priority" value="Low"><p class="checkboxItem">Low</p>
+              <input id="checkHigh" class="checkboxItem" type="radio" name="priority" v-model="priority" value="High" required>
+              <label for="checkHigh" class="checkboxItem">High</label>
+              <input id="checkLow" class="checkboxItem" type="radio" name="priority" v-model="priority" value="Low" required>
+              <label for="checkLow" class="checkboxItem">Low</label>
             </div>
             <input class="btn" type="submit" value="Add Item">
             <button class="btn" v-if="todos.find(item => item.isComplete == true)" v-on:click.prevent="deleteComplete">Remove Completed</button>
